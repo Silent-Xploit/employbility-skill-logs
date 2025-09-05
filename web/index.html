@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employability Skills Log</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="roleModal" class="modal" style="display:flex;">
+        <div style="background:#fff; padding:30px 40px; border-radius:10px; text-align:center;">
+            <h2>Who are you?</h2>
+            <button id="lecturerBtn" style="margin:10px; padding:10px 30px; font-size:1.1em;">Lecturer</button>
+            <button id="studentBtn" style="margin:10px; padding:10px 30px; font-size:1.1em;">Student</button>
+        </div>
+    </div>
+    <div class="container" id="mainContainer" style="display:none;">
+        <div style="display:flex;">
+            <div id="studentInfo" style="width:220px; background:#f8f9fa; padding:20px; border-radius:8px; margin-right:30px; height:100%;">
+                <h3 style="margin-top:0;">Student Info</h3>
+                <div><strong>Name:</strong> <span id="studentName">Surendra Khatri</span></div>
+                <div><strong>ID:</strong> <span id="studentId">98516324</span></div>
+            </div>
+            <div style="flex:1;">
+                <h1>Employability Skills Log</h1>
+                <form id="uploadForm">
+                    <input type="text" id="postText" placeholder="Describe your skill or experience..." required>
+                    <input type="file" id="mediaInput" accept="image/*,video/*" required>
+                    <button type="submit">Upload & Post</button>
+                </form>
+                <div id="posts"></div>
+                <div id="modal" class="modal" style="display:none;">
+                    <span id="closeModal" class="close">&times;</span>
+                    <div id="modalContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
