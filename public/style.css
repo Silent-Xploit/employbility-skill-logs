@@ -1,0 +1,195 @@
+/* Business Management Theme Styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.18;
+}
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.95);
+    padding: 30px 30px 30px 0;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+    background: #f4f8ff;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.07);
+}
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #b3d1ff;
+    border-radius: 6px;
+    font-size: 1em;
+    background: #f8fbff;
+}
+input[type="file"] {
+    border: none;
+    background: #f8fbff;
+    font-size: 1em;
+}
+button {
+    padding: 10px;
+    background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.09);
+    transition: background 0.2s;
+}
+button:hover {
+    background: linear-gradient(90deg, #0056b3 60%, #007bff 100%);
+}
+.post {
+    background: #f9fcff;
+    border: 1px solid #e3f0ff;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.07);
+}
+.post-media {
+    max-width: 100%;
+    max-height: 300px;
+    display: block;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.09);
+}
+.feedback {
+    margin-top: 10px;
+    background: #eaf6ff;
+    padding: 10px;
+    border-radius: 8px;
+}
+.feedback input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #b3d1ff;
+    border-radius: 6px;
+    background: #f8fbff;
+}
+.feedback button {
+    padding: 8px 16px;
+    margin-left: 5px;
+    background: linear-gradient(90deg, #28a745 60%, #00c851 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.98em;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(40,167,69,0.09);
+}
+.feedback button:hover {
+    background: linear-gradient(90deg, #218838 60%, #28a745 100%);
+}
+.feedback-list {
+    margin-top: 8px;
+    font-size: 1em;
+    color: #555;
+}
+.feedback-list strong {
+    color: #007bff;
+    font-size: 1.05em;
+    display: block;
+    margin-bottom: 4px;
+}
+#studentInfo {
+    width: 220px;
+    background: linear-gradient(135deg, #f8f9fa 60%, #e3f0ff 100%);
+    padding: 20px;
+    border-radius: 12px;
+    margin-right: 30px;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    border: 2px solid #007bff22;
+}
+#studentInfo h3 {
+    margin-top: 0;
+    color: #007bff;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+#studentInfo strong {
+    color: #333;
+}
+#studentInfo span {
+    color: #007bff;
+    font-weight: 600;
+}
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal .close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+}
+#modalContent img, #modalContent video {
+    max-width: 80vw;
+    max-height: 80vh;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+#roleModal .modal-content {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.13);
+    padding: 30px 40px;
+    text-align: center;
+}
+#roleModal button {
+    background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 1.1em;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.09);
+}
+#roleModal button:hover {
+    background: linear-gradient(90deg, #0056b3 60%, #007bff 100%);
+}
